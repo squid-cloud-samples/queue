@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import { useSquid } from '@squidcloud/react';
+import '@squidcloud/ui/styles/index.css';
 
 function App() {
   const [message, setMessage] = useState('');
@@ -25,17 +26,18 @@ function App() {
   };
 
   return (
-    <>
+    <div>
       <div>{message}</div>
-      <form onSubmit={writeMessage}>
-        <input
+      <form className="sq-card" onSubmit={writeMessage}>
+        <input className="sq-input"
           name="message"
           value={outgoingMessage}
           onChange={handleInputChange}
         />
-        <button type="submit">Write Message</button>
+        <button className="sq-btn" type="submit">Write Message</button>
       </form>
-    </>
+      
+    </div>
   );
 }
 
