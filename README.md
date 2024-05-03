@@ -66,7 +66,7 @@ cd queue/frontend
 npm install
 ```
 
-9. Create the `local.env` generate the frontend uses to access the `SquidContextProvider`:
+9. Create a `local.env` file that contains information about your Squid app using the following command. The frontend then accesses these environment variables in the `SquidContextProvider` in `main.tsx`.
 
 ```bash
 npm run setup-env
