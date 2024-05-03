@@ -25,10 +25,10 @@ You can access this functionality through 3 integration options. Select an optio
 
 1. In the [Squid Cloud Console](https://console.squid.cloud) create a new app called `queue`.
 2. Connect the Squid backend to the new app you created by scrolling in the console to the **Backend** section and selecting **Create .env file**. Copy the command.
-3. Open a terminal window and change to the `queue-backend` directory.
+3. Open a terminal window and change to the `backend` directory.
 
 ```bash
-cd queue/queue-backend
+cd queue/backend
 ```
 
 4. Install the required packages:
@@ -57,7 +57,7 @@ squid start
 7. Open a second terminal window. In this window, navigate to the frontend:
 
 ```bash
-cd queue/queue-frontend
+cd queue/frontend
 ```
 
 8. Install the required dependencies:
@@ -66,7 +66,12 @@ cd queue/queue-frontend
 npm install
 ```
 
-9. Open the `queue-frontend/src/main.tsx` file and update the configuration with your app's information. You can find the values in the Squid Cloud Console or in the `.env` file you downloaded.
+9. Create the `local.env` generate the frontend uses to access the `SquidContextProvider`:
+
+```bash
+npm run setup-env
+```
+
 10. Start the frontend by running:
 
 ```bash
