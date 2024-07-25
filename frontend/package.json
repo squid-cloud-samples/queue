@@ -11,9 +11,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@squidcloud/react": "^1.0.51",
-    "@squidcloud/samples": "^1.0.11",
-    "@squidcloud/ui": "^1.0.5",
+    "@squidcloud/react": "^1.0.55",
+    "@squidcloud/samples": "^1.0.12",
+    "@squidcloud/ui": "^1.0.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
